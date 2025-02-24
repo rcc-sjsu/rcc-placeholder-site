@@ -1,0 +1,107 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f3e7ff, #eceff1);
+    color: #4a154b;
+    line-height: 1.6;
+}
+
+/* Main Content */
+main
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    gap: 20px;
+}
+
+.content
+{
+    text-align: left;
+    max-width: 700px;
+}
+
+.text-content p
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+}
+
+h1
+{
+    margin-top: 10rem;
+}
+
+
+/* images */
+.icons
+{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.icons a img
+{
+    width: 40px;
+    margin-top: 20px;
+}
+
+.illustrations
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.circle
+{
+    max-width: 25rem;
+    max-height: 25rem;
+    background: linear-gradient(135deg, #cbb5ff, #b2ebf2);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo
+{
+    width: 25rem;
+    height: 25rem;
+    background: linear-gradient(135deg, #cbb5ff, #b2ebf2);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.lightbulb, .smiley
+{
+    position: absolute;
+    width: 100px;
+}
+
+.lightbulb
+{
+    top: -60px;
+    right: 150px;
+}
+
+.smiley
+{
+    bottom: -20px;
+    right: 20px;
+}
