@@ -5,12 +5,13 @@
     box-sizing: border-box;
 }
 
-body {
+/* body
+{
     font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #f3e7ff, #eceff1);
     color: #4a154b;
     line-height: 1.6;
-}
+} */
 
 /* Main Content */
 main
@@ -53,8 +54,21 @@ h1
 
 .icons a img
 {
-    width: 40px;
-    margin-top: 20px;
+    width: 2.5rem;
+    margin-top: 1.25rem;
+}
+
+
+.icons a
+{
+    transition: 0.3s;
+}
+.icons a:hover
+{
+    -webkit-transform: scale(1.);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 0.3s ease;
 }
 
 .illustrations
@@ -96,12 +110,14 @@ h1
 
 .lightbulb
 {
-    top: -60px;
-    right: 150px;
+    top: -20px;
+    right: 300px;
+    min-width: 130px;
 }
 
 .smiley
 {
-    bottom: -20px;
+    bottom: -40px;
     right: 20px;
+    min-width: 150px;
 }
