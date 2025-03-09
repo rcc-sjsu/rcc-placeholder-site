@@ -44,8 +44,20 @@ li
 
 }
 
-@media screen and (max-width: 1026px) {
-  #text {
-    margin-top: 140rem;
+@media screen and (max-width: 1195px) {
+  * {
+    position: relative;
+    margin: auto;
+  }
+  #all {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+  }
+  #img {
+    width: 70%;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
   }
 }
