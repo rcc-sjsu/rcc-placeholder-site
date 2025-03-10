@@ -1,0 +1,31 @@
+/* Apply styles to the full page container */
+#all {
+    background: radial-gradient(circle at 67% 50%, rgba(192, 108, 255, 0.6) 0%, rgba(255,255,255,1) 47%);
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+}
+
+/* Styling for the image */
+#img {
+    max-width: 33rem;
+    margin-left: 3rem;
+}
+
+/* Styling for the text content */
+#text {
+    max-width: 48.667rem;
+    margin: auto 3rem;
+    text-align: center;
+}
+
+/* Header (Mission Statement) */
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+/* Paragraph text */
+p {
+    font-size: 1.8rem;
+}
