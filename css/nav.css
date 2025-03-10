@@ -4,17 +4,23 @@
   padding: 0;
 }
 
-.rcc
-{
-    font-family: Zilla Slab;
-    font-size: 86px;
-    font-weight: 650;
-    line-height: 115.2px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: #5C1C75;
+.rcc {
+  display: inline-block;
 }
+
+.rcc img {
+  width: 100px; /* Default size */
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease-in-out; /* Ensures smooth animation */
+}
+
+.rcc:hover img {
+  transform: scale(1.2); /* Expands image smoothly */
+}
+
+
+
 
 .topnav {
   position: absolute;
@@ -80,6 +86,7 @@
 
 .nav-container a:hover {
   color: #7d2699;
+
 }
 
 .signup-button a:hover {

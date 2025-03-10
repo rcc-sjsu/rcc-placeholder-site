@@ -1,5 +1,6 @@
 /* Reset and Global Styles */
-* {
+*
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -81,7 +82,7 @@ h1
 
 .icons a:hover
 {
-    -webkit-transform: scale(1.);
+    -webkit-transform: scale(1);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
     transition: 0.3s ease;
