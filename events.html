@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="./css/events.css">
+    <link rel="stylesheet" href="./css/global.css">
+
+    <!-- FullCalendar CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet" />
+
+    <!-- FullCalendar JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+
+
+    <!-- Font Libraries -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <title> Events </title>
+    <script src="https://unpkg.com/htmx.org@1.9.6"
+        integrity="sha384-FhXw7b6AlE/jyjlZH5iHa/tTe9EpJ1Y55RjcgPbjeWMskSxZt1v9qkxLJWNJaGni" crossorigin="anonymous">
+        </script>
+
+    <script src="js/header.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+
+    <!-- <div class="topnav">
+        <div class="nav-container">
+            <a href="about-page.html"> about us</a>
+            <a href="committees-page.html"> committees </a>
+            <a href="events-page.html"> events </a>
+            <a href="portfolio-page.html"> portfolio </a>
+        </div>
+
+        <div class="signup-button">
+            <a href="signup-page.html"> sign up </a>
+        </div>
+    </div> -->
+
+    <header-component></header-component>
+    </div>
+
+    <h1> Events </h1>
+    <div id="calendar-container">
+        <div id="calendar"></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var calendarEl = document.getElementById('calendar');
+
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                headerToolbar: {
+                    start: 'prev,next today',
+                    center: 'title',
+                    end: 'dayGridMonth,timeGridWeek,timeGridDay'
+                },
+                events: [
+                    {
+                        title: 'Team Meeting',
+                        start: '2025-01-10T10:00:00',
+                        end: '2025-01-10T11:00:00'
+                    },
+                    {
+                        title: 'Guest Speaker',
+                        start: '2025-01-15',
+                        end: '2025-01-17'
+                    },
+                    {
+                        title: 'Social Event',
+                        start: '2025-01-20T12:30:00'
+                    }
+                ]
+            });
+
+            calendar.render();
+        });
+    </script>
+
+</body>
+
+</html>

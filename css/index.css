@@ -19,7 +19,7 @@ html
 {
     height: 100%;
     width: auto;
-    background: radial-gradient(circle, rgba(192, 108, 255, 0.6), rgba(255, 255, 255, 0));
+    background: radial-gradient(ellipse 50% 30% at center, rgba(192, 108, 255, 0.6), rgba(255, 255, 255, 0));
 }
 main
 {
