@@ -18,14 +18,3 @@
     margin: auto 3rem;
     text-align: center;
 }
-
-/* Header (Mission Statement) */
-h1 {
-    font-size: 4rem;
-    font-weight: bold;
-}
-
-/* Paragraph text */
-p {
-    font-size: 1.8rem;
-}

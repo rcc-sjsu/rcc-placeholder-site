@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
+    <title>Our Ambassadors</title>
 
     <!-- External CSS -->
-    <link href="./css/global.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/ambassadorship.css" />
     <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/global.css" />
     <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="/assets/logos/favicon.png" />
     <!-- animation library -->
@@ -16,7 +16,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <!-- Font Libraries (Optimized) -->
+    <!-- Font Libraries -->
     <link
       href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;700&family=Inter:wght@100..900&family=Nunito+Sans:wght@200..1000&display=swap"
       rel="stylesheet"
@@ -45,29 +45,42 @@
       </div>
     </div>
 
-    <div id="all">
+    <div id="all" class="animate__animated animate__fadeInUp">
+      <div id="text">
+        <h1><strong> Student Ambassadorship </strong></h1>
+        <p>
+          RCC's impact thrives through our <strong><i>dedicated ambassadors</i></strong> who lead
+          committees like Industry, Consulting, Marketing, and Technical
+          Workshops. Each committee, guided by a <strong><i>Lead Ambassador</i></strong>, fosters
+          collaboration and innovation.
+        </p>
+        <p>
+          Want to join? Committees frequently recruit new ambassadors—stay tuned
+          on our socials for updates!
+        </p>
+      </div>
+
       <img
-        id="img"
+        class="img"
+        id="idcard"
+        src="assets/icons/idcard.svg"
+        loading="lazy"
+        alt="ID Card"
+      />
+      <img
+        class="img"
+        id="group-photo"
         src="assets/ambassador-pics/AmbassadorsGroupPhoto.svg"
         loading="lazy"
         alt="Ambassadors Group Photo"
-        class="animate__animated animate__fadeInLeft"
       />
-
-      <div id="text" class="animate__animated animate__fadeInRight">
-        <h1><strong> Our Mission Statement </strong></h1>
-        <p>
-          RCC’s mission is to make responsible computing
-          <strong><i>relevant to everyone</i></strong> and
-          <strong><i>applicable to their everyday lives</i></strong
-          >, no matter their background. In order to harness our mission of
-          inviting <strong><i>all majors</i></strong> (and minors) to hone their
-          <strong><i>collective strengths</i></strong
-          >, we've created <strong><i>dedicated teams</i></strong> focused on
-          areas like workshops, consulting, marketing, web dev, and so much
-          more!
-        </p>
-      </div>
+      <img
+        class="img"
+        id="shapes"
+        src="assets/icons/shapes.svg"
+        loading="lazy"
+        alt="Decorative Shapes"
+      />
     </div>
   </body>
 </html>

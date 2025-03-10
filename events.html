@@ -8,10 +8,17 @@
     <link rel="stylesheet" href="./css/events.css">
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/nav.css">
-
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/logos/favicon.png">
     <!-- FullCalendar CSS -->
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet" />
 
+    <!-- animation library -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    
     <!-- FullCalendar JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
 
@@ -31,15 +38,14 @@
 </head>
 
 <body>
-    <div class="topnav animate__animated animate__fadeInDown">
+    <div class="topnav">
         <div>
             <a class="rcc" href="index.html"><img class="animate__animated" src="./assets/logos/rcc-logo.png" alt="RCC Logo"></a>
         </div>
         <div class="nav-container">
-            <a href="about.html">about</a>
-            <a href="committees.html">committees </a>
+            <a href="about-page.html">about</a>
+            <a href="ambassadorship.html">ambassadorship </a>
             <a href="events.html">events</a>
-            <a href="portfolio.html">portfolio</a>
         </div>
     
         <div class="signup-button">
@@ -61,8 +67,8 @@
     </div> -->
 
     <!-- </div> -->
+    <h1 class="title animate__animated animate__fadeInDown"> Events </h1>
     <div class="iframe-container animate__animated animate__fadeInUp">
-        <h1 class="title"> Events </h1>
         <iframe src="https://embed.styledcalendar.com/#Zkurr3Y7bF1xbFBZBSao" title="Styled Calendar" class="styled-calendar-container" style="width: 100%; border: none;" data-cy="calendar-embed-iframe"></iframe>
         <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
         <!-- cover up button -->
