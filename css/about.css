@@ -3,6 +3,7 @@
     background: radial-gradient(circle at 67% 50%, rgba(192, 108, 255, 0.6) 0%, rgba(255,255,255,1) 47%);
     justify-content: center;
     display: flex;
+    align-items: center;
     height: 100vh;
 }
 
