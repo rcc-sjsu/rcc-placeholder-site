@@ -92,3 +92,24 @@
 .signup-button a:hover {
   background-color: #7d2699;
 }
+
+
+@media (max-width: 768px) {
+  .topnav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .nav-container {
+    position: static;
+    transform: none;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .signup-button {
+    margin-top: 10px;
+  }
+}
