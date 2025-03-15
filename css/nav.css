@@ -23,7 +23,7 @@
 
 
 .topnav {
-  position: absolute;
+  position: fixed;
   overflow: hidden;
   left: 0;
   right: 0;
@@ -38,7 +38,7 @@
 }
 
 .nav-container {
-  position: absolute;
+  position: fixed;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
