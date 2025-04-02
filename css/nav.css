@@ -4,112 +4,145 @@
   padding: 0;
 }
 
-.rcc {
-  display: inline-block;
+/* Top Navigation Bar */
+.topnav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
 }
 
+/* Logo styling */
 .rcc img {
-  width: 100px; /* Default size */
+  width: 100px;
   height: auto;
   display: block;
-  transition: transform 0.3s ease-in-out; /* Ensures smooth animation */
+  transition: transform 0.3s ease-in-out;
 }
 
 .rcc:hover img {
-  transform: scale(1.2); /* Expands image smoothly */
+  transform: scale(1.2);
 }
 
-
-
-
-.topnav {
-  position: fixed;
-  overflow: hidden;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: 1000;
-  padding-top: 1rem;
-  display: flex;
-  justify-content: space-between;
-  padding-left: 5%;
-  padding-right: 5%;
-  align-items: center;
-}
-
+/* Main navigation container */
 .nav-container {
+  display: flex;
+  gap: 40px;
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
-  display: flex;
-  gap: 40px;
-  align-items: center;
 }
 
-.topnav a {
-  position: relative;
-  font-family: Nunito Sans;
+/* Navigation links */
+.nav-container a {
+  font-family: 'Nunito Sans', sans-serif;
   font-size: 30px;
   font-weight: 500;
-  line-height: 40.92px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  text-decoration: none;
   color: #000000c7;
-  text-decoration: none;
-  margin: 5px;
   transition: color 0.3s ease-in-out;
-}
-
-.signup-button {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
-
-.signup-button a {
-  position: relative;
-  font-family: Nunito Sans;
-  font-size: 30px;
-  font-weight: 500;
-  line-height: 40.92px;
-  padding: 10px 20px;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: #ffffff;
-  text-decoration: none;
-  background-color: #5c1c75;
-  border-radius: 15px;
-  margin: 5px;
-  transition: background-color 0.3s ease-in-out;
 }
 
 .nav-container a:hover {
   color: #7d2699;
+}
 
+/* Signup button */
+.signup-button {
+  display: flex;
+  align-items: center;
+}
+
+.signup-button a {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  padding: 10px 20px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #5c1c75;
+  border-radius: 15px;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .signup-button a:hover {
   background-color: #7d2699;
 }
 
+/* Hamburger Menu - hidden by default on desktop */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 6px;
+  z-index: 1001;
+}
 
-@media (max-width: 768px) {
+.menu-toggle .bar {
+  width: 30px;
+  height: 3px;
+  background-color: #5c1c75;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+/* Mobile/Portrait Styles */
+@media (max-width: 768px), (orientation: portrait) {
   .topnav {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 1rem;
+    flex-direction: row-reverse; /* Reverses order to place hamburger on left */
   }
-
+  
+  /* Show hamburger menu */
+  .menu-toggle {
+    display: flex;
+    order: -1; /* Ensures it's on the left */
+  }
+  
+  /* Animate hamburger menu when active */
+  .menu-toggle.active .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  
+  .menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-toggle.active .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+  
+  /* Hide regular nav links */
   .nav-container {
-    position: static;
+    position: fixed;
+    top: 80px; /* Below navbar */
+    left: 0;
+    width: 100%;
     transform: none;
+    background-color: white;
     flex-direction: column;
-    gap: 20px;
+    align-items: flex-start;
+    padding: 20px;
+    display: none; /* Hidden by default */
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    z-index: 999;
   }
-
-  .signup-button {
-    margin-top: 10px;
+  
+  /* Show full dropdown when active */
+  .nav-container.active {
+    display: flex;
   }
+  
+  .nav-container a {
+    padding: 10px 0;
+    font-size: 24px;
+    width: 100%;
+    display: block;
+  }
+  
 }

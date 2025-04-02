@@ -1,10 +1,19 @@
 /* Apply styles to the full page container */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    gap: 10px;
+    margin: 15px;
+}
+
 #all {
-    background: radial-gradient(circle at 67% 50%, rgba(192, 108, 255, 0.6) 0%, rgba(255,255,255,1) 47%);
+    background: radial-gradient(circle at 67% 50%, rgba(192, 108, 255, 0.6) 0%, rgba(255, 255, 255, 1) 47%);
     justify-content: center;
     display: flex;
     align-items: center;
-    height: 100vh;
 }
 
 /* Styling for the image */
@@ -18,4 +27,33 @@
     max-width: 48.667rem;
     margin: auto 3rem;
     text-align: center;
+}
+
+@media (max-width: 768px),
+(orientation: portrait) {
+
+    #all {
+        background: radial-gradient(circle at 67% 50%, rgba(192, 108, 255, 0.6) 0%, rgba(255, 255, 255, 1) 47%);
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Styling for the image */
+    #img {
+        max-width: 33rem;
+        margin-left: 3rem;
+    }
+
+    /* Styling for the text content */
+    #text {
+        max-width: 48.667rem;
+        margin: auto 3rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
