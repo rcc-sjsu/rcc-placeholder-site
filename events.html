@@ -14,11 +14,8 @@
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet" />
 
     <!-- animation library -->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <!-- FullCalendar JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
 
@@ -26,33 +23,46 @@
     <!-- Font Libraries -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <!-- Animation  Library -->
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Animation  Library -->
+    <link rel="stylesheet" href="css/animate.min.css" />
     <title> Events </title>
 
     <script src="js/header.js" type="text/javascript" defer></script>
 </head>
 
 <body>
-    <div class="topnav">
-        <div>
-            <a class="rcc" href="index.html"><img class="animate__animated" src="./assets/logos/rcc-logo.png" alt="RCC Logo"></a>
+    <div class="topnav animate__animated animate__fadeInDown">
+
+        <!-- Hamburger Menu for Mobile/Portrait -->
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
+
+        <!-- Logo -->
+        <div class="logo-container">
+            <a class="rcc" href="index.html"><img src="./assets/logos/rcc-logo.png" alt="RCC Logo"></a>
+        </div>
+
+        <!-- Signup Button -->
+        <div class="signup-button">
+            <a target="_blank"
+                href="https://docs.google.com/forms/d/1ZAILmgPZ6aBTTLSEGTFSLjsE8__JFndryBtU0JBptIA/preview">sign
+                up</a>
+        </div>
+
+        <!-- Navigation Links - Hidden in mobile view by default -->
         <div class="nav-container">
             <a href="about-page.html">about</a>
-            <a href="ambassadorship.html">ambassadorship </a>
+            <a href="ambassadorship.html">ambassadorship</a>
             <a href="events.html">events</a>
         </div>
-    
-        <div class="signup-button">
-                <a href="signup.html"> sign up </a>
-        </div>
     </div>
-    
+
     <!-- <div class="topnav">
         <div class="nav-container">
             <a href="about-page.html"> about us</a>
@@ -69,7 +79,9 @@
     <!-- </div> -->
     <h1 class="title animate__animated animate__fadeInDown"> Events </h1>
     <div class="iframe-container animate__animated animate__fadeInUp">
-        <iframe src="https://embed.styledcalendar.com/#Zkurr3Y7bF1xbFBZBSao" title="Styled Calendar" class="styled-calendar-container" style="width: 100%; border: none;" data-cy="calendar-embed-iframe"></iframe>
+        <iframe src="https://embed.styledcalendar.com/#Zkurr3Y7bF1xbFBZBSao" title="Styled Calendar"
+            class="styled-calendar-container" style="width: 100%; border: none;"
+            data-cy="calendar-embed-iframe"></iframe>
         <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
         <!-- cover up button -->
         <div class="iframe-overlay"></div>
@@ -112,6 +124,7 @@
             calendar.render();
         });
     </script> -->
+    <script src="js/nav.js" defer></script>
 
 </body>
 

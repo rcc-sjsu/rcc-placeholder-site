@@ -1,72 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
 
-    <!-- External CSS -->
-    <link href="./css/global.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/about.css" />
-    <link rel="stylesheet" href="./css/nav.css" />
-    <!-- favicon -->
-    <link rel="icon" type="image/x-icon" href="/assets/logos/favicon.png" />
-    <!-- animation library -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <!-- Font Libraries (Optimized) -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;700&family=Inter:wght@100..900&family=Nunito+Sans:wght@200..1000&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="topnav">
-      <div>
-        <a class="rcc" href="index.html"
-          ><img src="./assets/logos/rcc-logo.png" alt="RCC Logo"
-        /></a>
-      </div>
-      <div class="nav-container">
-        <a href="about-page.html">about</a>
-        <a href="ambassadorship.html">ambassadorship </a>
-        <a href="events.html">events</a>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us</title>
 
-      <div class="signup-button">
-        <a
-          target="_blank"
-          href="https://docs.google.com/forms/d/1ZAILmgPZ6aBTTLSEGTFSLjsE8__JFndryBtU0JBptIA/preview"
-        >
-          sign up
-        </a>
-      </div>
+  <!-- External CSS -->
+  <link href="./css/global.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/about.css" />
+  <link rel="stylesheet" href="./css/nav.css" />
+  <!-- favicon -->
+  <link rel="icon" type="image/x-icon" href="/assets/logos/favicon.png" />
+  <!-- animation library -->
+  <link rel="stylesheet" href="css/animate.min.css" />
+  <!-- Font Libraries (Optimized) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;700&family=Inter:wght@100..900&family=Nunito+Sans:wght@200..1000&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="topnav animate__animated animate__fadeInDown">
+
+    <!-- Hamburger Menu for Mobile/Portrait -->
+    <div class="menu-toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
     </div>
 
+    <!-- Logo -->
+    <div class="logo-container">
+      <a class="rcc" href="index.html"><img src="./assets/logos/rcc-logo.png" alt="RCC Logo"></a>
+    </div>
+
+    <!-- Signup Button -->
+    <div class="signup-button">
+      <a target="_blank"
+        href="https://docs.google.com/forms/d/1ZAILmgPZ6aBTTLSEGTFSLjsE8__JFndryBtU0JBptIA/preview">sign
+        up</a>
+    </div>
+
+    <!-- Navigation Links - Hidden in mobile view by default -->
+    <div class="nav-container">
+      <a href="about-page.html">about</a>
+      <a href="ambassadorship.html">ambassadorship</a>
+      <a href="events.html">events</a>
+    </div>
+  </div>
+
+  <main>
     <div id="all">
-      <img
-        id="img"
-        src="assets/ambassador-pics/AmbassadorsGroupPhoto.png"
-        alt="Ambassadors Group Photo"
-        class="animate__animated animate__fadeInLeft"
-      />
+      <img id="img" src="assets/ambassador-pics/AmbassadorsGroupPhoto.png" alt="Ambassadors Group Photo"
+        class="animate__animated animate__fadeInLeft" />
+
 
       <div id="text" class="animate__animated animate__fadeInRight">
         <h1><strong> Our Mission Statement </strong></h1>
         <p>
           RCC’s mission is to make responsible computing
           <strong><i>relevant to everyone</i></strong> and
-          <strong><i>applicable to their everyday lives</i></strong
-          >, no matter their background. In order to harness our mission of
+          <strong><i>applicable to their everyday lives</i></strong>, no matter their background. In order to harness
+          our mission of
           inviting <strong><i>all majors</i></strong> (and minors) to hone their
-          <strong><i>collective strengths</i></strong
-          >, we've created <strong><i>dedicated teams</i></strong> focused on
+          <strong><i>collective strengths</i></strong>, we've created <strong><i>dedicated teams</i></strong> focused on
           areas like workshops, consulting, marketing, web dev, and so much
           more!
         </p>
       </div>
-    </div>
-  </body>
+  </main>
+
+  <script src="js/nav.js" defer></script>
+
+  </div>
+</body>
+
 </html>

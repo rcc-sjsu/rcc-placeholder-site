@@ -1,70 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/nav.css">
 
-    <!-- favicon -->
-    <link rel="icon" type="image/x-icon" href="/assets/logos/favicon.png">
-    <!-- Font Libraries -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <!-- animation library -->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <title>Responsible Computing Club</title>
+  <!-- favicon -->
+  <link rel="icon" type="image/x-icon" href="/assets/logos/favicon.png">
+  <!-- Font Libraries -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <!-- animation library -->
+  <link rel="stylesheet" href="css/animate.min.css" />
+  <title>Responsible Computing Club</title>
 </head>
 
 <div class="topnav animate__animated animate__fadeInDown">
-    <div>
-        <a class="rcc" href="index.html"><img src="./assets/logos/rcc-logo.png" alt="RCC Logo"></a>
-    </div>
-    <div class="nav-container">
-        <a href="about-page.html">about</a>
-        <a href="ambassadorship.html">ambassadorship </a>
-        <a href="events.html">events</a>
-    </div>
 
-    <div class="signup-button">
-            <a target="_blank" href="https://docs.google.com/forms/d/1ZAILmgPZ6aBTTLSEGTFSLjsE8__JFndryBtU0JBptIA/preview"> sign up </a>
-    </div>
+  <!-- Hamburger Menu for Mobile/Portrait -->
+  <div class="menu-toggle">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
+
+  <!-- Logo -->
+  <div class="logo-container">
+    <a class="rcc" href="index.html"><img src="./assets/logos/rcc-logo.png" alt="RCC Logo"></a>
+  </div>
+
+  <!-- Signup Button -->
+  <div class="signup-button">
+    <a target="_blank" href="https://docs.google.com/forms/d/1ZAILmgPZ6aBTTLSEGTFSLjsE8__JFndryBtU0JBptIA/preview">sign
+      up</a>
+  </div>
+
+  <!-- Navigation Links - Hidden in mobile view by default -->
+  <div class="nav-container">
+    <a href="about-page.html">about</a>
+    <a href="ambassadorship.html">ambassadorship</a>
+    <a href="events.html">events</a>
+  </div>
 </div>
 
 <body>
-    <main>
-        <div class=" content">
-            <div class="text-content">
-                <h1 class="animate__animated animate__fadeInLeft">Responsible Computing Club</h1>
-                <p class="animate__animated animate__fadeInLeft">
-                    The Responsible Computing Club (RCC) at SJSU, partnering with Mozilla,
-                    empowers students to shape the future of tech. Connect with us below!
-                </p>
-            </div>
-            <div class="icons animate__animated animate__fadeInLeft">
-                <!-- make the background image of the a tag is the photo -->
-                <a class="social-icon" target="_blank" href="https://www.instagram.com/rcc.sjsu/"><img src="assets/social-icons/instagram.png" alt="Instagram"></a>
-                <a class="social-icon" target="_blank" href="https://www.linkedin.com/company/rcc-sjsu/"><img src="assets/social-icons/linkedin.png" alt="LinkedIn"></a>
-                <a class="social-icon" target="_blank" href="https://discord.com/invite/RGG9dMw4Rc"><img src="assets/social-icons/discord.png" alt="Discord"></a>
-                <a class="social-icon" target="_blank" href="mailto:"><img src="assets/social-icons/email.png" alt="Email"></a>
-            </div>
-        </div>
-        <div class="illustrations animate__animated animate__fadeInRight">
-            <div class="circle">
-                <img class="logo" src="assets/logos/mozilla-logo.png" alt="Mozilla">
-            </div>
+  <main>
+    <div class=" content">
+      <div class="text-content">
+        <h1 class="animate__animated animate__fadeInLeft">Responsible Computing Club</h1>
+        <p class="animate__animated animate__fadeInLeft">
+          The Responsible Computing Club (RCC) at SJSU, partnering with Mozilla,
+          empowers students to shape the future of tech. Connect with us below!
+        </p>
+      </div>
+      <div class="icons animate__animated animate__fadeInLeft">
+        <!-- make the background image of the a tag is the photo -->
+        <a class="social-icon" target="_blank" href="https://www.instagram.com/rcc.sjsu/"><img
+            src="assets/social-icons/instagram.png" alt="Instagram"></a>
+        <a class="social-icon" target="_blank" href="https://www.linkedin.com/company/rcc-sjsu/"><img
+            src="assets/social-icons/linkedin.png" alt="LinkedIn"></a>
+        <a class="social-icon" target="_blank" href="https://discord.com/invite/RGG9dMw4Rc"><img
+            src="assets/social-icons/discord.png" alt="Discord"></a>
+        <a class="social-icon" target="_blank" href="mailto:"><img src="assets/social-icons/email.png" alt="Email"></a>
+      </div>
+    </div>
+    <div class="illustrations animate__animated animate__fadeInRight">
+      <div class="circle">
+        <img class="logo" src="assets/logos/mozilla-logo.png" alt="Mozilla">
+      </div>
 
-            <div class="decorations">
-                <img src="assets/svg-icons/lightbulb-icon.svg" alt="Lightbulb" class="lightbulb">
-                <img src="assets/svg-icons/smiley-icon.svg" alt="Smiley" class="smiley">
-            </div>
-        </div>
-    </main>
+      <div class="decorations">
+        <img src="assets/svg-icons/lightbulb-icon.svg" alt="Lightbulb" class="lightbulb">
+        <img src="assets/svg-icons/smiley-icon.svg" alt="Smiley" class="smiley">
+      </div>
+    </div>
+  </main>
+  <script src="js/nav.js" defer></script>
 </body>
+
 </html>

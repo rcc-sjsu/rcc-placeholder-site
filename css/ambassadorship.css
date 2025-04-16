@@ -10,6 +10,7 @@
     align-items: center;
     display: flex;
     height: 100vh;
+    padding-top: 100px;
 }
 
 /* Text container */
@@ -80,7 +81,7 @@ li {
 }
 
 /* Responsive styles */
-@media screen and (max-width: 1195px) {
+@media screen and (max-width: 768px) {
     * {
         position: relative;
         margin: auto;
@@ -88,11 +89,12 @@ li {
     #all {
         display: flex;
         flex-direction: column;
+        height: 150vh;
     }
     #text {
         margin-top: 15%;
     }
     #group-photo {
-        margin: auto;
+        margin: 0;
     }
 }
