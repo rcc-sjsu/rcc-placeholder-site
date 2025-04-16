@@ -1,114 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Ambassadors</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Our Ambassadors</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./css/ambassadorship.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/logos/favicon.png" />
+    <!-- animation library -->
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <!-- Font Libraries -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;700&family=Inter:wght@100..900&family=Nunito+Sans:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <!-- External CSS -->
-  <link rel="stylesheet" href="./css/ambassadorship.css" />
-  <link rel="stylesheet" href="./css/nav.css" />
-  <link rel="stylesheet" href="./css/global.css" />
-  <!-- favicon -->
-  <link rel="icon" type="image/x-icon" href="/assets/logos/favicon.png" />
-  <!-- animation library -->
-  <link rel="stylesheet" href="css/animate.min.css" />
-  <!-- Font Libraries -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;700&family=Inter:wght@100..900&family=Nunito+Sans:wght@200..1000&display=swap"
-    rel="stylesheet" />
-</head>
+  <body>
+    <div class="topnav animate__animated animate__fadeInDown">
+      <!-- Hamburger Menu for Mobile/Portrait -->
+      <div class="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
 
-<body>
-  <div class="topnav animate__animated animate__fadeInDown">
+      <!-- Logo -->
+      <div class="logo-container">
+        <a class="rcc" href="index.html"
+          ><img src="./assets/logos/rcc-logo.png" alt="RCC Logo"
+        /></a>
+      </div>
 
-    <!-- Hamburger Menu for Mobile/Portrait -->
-    <div class="menu-toggle">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
+      <!-- Signup Button -->
+      <div class="signup-button">
+        <a
+          target="_blank"
+          href="https://docs.google.com/forms/d/1ZAILmgPZ6aBTTLSEGTFSLjsE8__JFndryBtU0JBptIA/preview"
+          >sign up</a
+        >
+      </div>
+
+      <!-- Navigation Links - Hidden in mobile view by default -->
+      <div class="nav-container">
+        <a href="about-page.html">about</a>
+        <a href="ambassadorship.html">ambassadorship</a>
+        <a href="events.html">events</a>
+      </div>
     </div>
 
-    <!-- Logo -->
-    <div class="logo-container">
-      <a class="rcc" href="index.html"><img src="./assets/logos/rcc-logo.png" alt="RCC Logo"></a>
+    <div id="all" class="animate__animated animate__fadeInUp">
+      <img
+        class="img"
+        id="group-photo"
+        src="assets/ambassador-pics/AmbassadorsGroupPhoto.png"
+        alt="Ambassadors Group Photo"
+      />
+
+      <div id="text">
+        <h1><strong> Student Ambassadorship </strong></h1>
+        <p>
+          RCC's impact thrives through our
+          <strong><i>dedicated ambassadors</i></strong> who lead committees like
+          Industry, Consulting, Marketing, and Technical Workshops. Each
+          committee, guided by a <strong><i>Lead Ambassador</i></strong
+          >, fosters collaboration and innovation.
+        </p>
+        <p>
+          Want to join? Committees frequently recruit new ambassadors—stay tuned
+          on our socials for updates!
+        </p>
+      </div>
     </div>
 
-    <!-- Signup Button -->
-    <div class="signup-button">
-      <a target="_blank"
-        href="https://docs.google.com/forms/d/1ZAILmgPZ6aBTTLSEGTFSLjsE8__JFndryBtU0JBptIA/preview">sign
-        up</a>
-    </div>
-
-    <!-- Navigation Links - Hidden in mobile view by default -->
-    <div class="nav-container">
-      <a href="about-page.html">about</a>
-      <a href="ambassadorship.html">ambassadorship</a>
-      <a href="events.html">events</a>
-    </div>
-  </div>
-
-  <div id="all" class="animate__animated animate__fadeInUp">
-
-    <img class="img" id="group-photo" src="assets/ambassador-pics/AmbassadorsGroupPhoto.png"
-      alt="Ambassadors Group Photo" />
-
-    <div id="text">
-      <h1><strong> Student Ambassadorship </strong></h1>
-      <p>
-        RCC's impact thrives through our <strong><i>dedicated ambassadors</i></strong> who lead
-        committees like Industry, Consulting, Marketing, and Technical
-        Workshops. Each committee, guided by a <strong><i>Lead Ambassador</i></strong>, fosters
-        collaboration and innovation.
-      </p>
-      <p>
-        Want to join? Committees frequently recruit new ambassadors—stay tuned
-        on our socials for updates!
-      </p>
-    </div>
-  </div>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const menuToggle = document.querySelector('.menu-toggle');
-      const navContainer = document.querySelector('.nav-container');
-
-      // Initially ensure dropdown is hidden
-      navContainer.style.display = 'none';
-
-      menuToggle.addEventListener('click', function () {
-        menuToggle.classList.toggle('active');
-
-        // Toggle dropdown visibility
-        if (navContainer.classList.contains('active')) {
-          navContainer.classList.remove('active');
-          setTimeout(() => {
-            navContainer.style.display = 'none';
-          }, 50);
-        } else {
-          navContainer.style.display = 'flex';
-          setTimeout(() => {
-            navContainer.classList.add('active');
-          }, 50);
-        }
-      });
-
-      // Handle window resize
-      window.addEventListener('resize', function () {
-        if (window.innerWidth > 768 && window.matchMedia('(orientation: landscape)').matches) {
-          navContainer.style.display = 'flex';
-          navContainer.classList.remove('active');
-          menuToggle.classList.remove('active');
-        } else {
-          if (!navContainer.classList.contains('active')) {
-            navContainer.style.display = 'none';
-          }
-        }
-      });
-    });
-  </script>
-</body>
-
+    <script src="js/nav.js" defer></script>
+  </body>
 </html>
