@@ -104,12 +104,12 @@ p {
 
 .lightbulb {
   top: -20px;
-  right: 300px;
+  left: -30px; /* Adjust to align with logo */
 }
 
 .smiley {
-  bottom: -40px;
-  right: 20px;
+  bottom: -20px;
+  right: -20px; /* Adjust to stick near logo edge */
 }
 
 /* Responsive Adjustments */
@@ -138,6 +138,7 @@ p {
 
   p {
     font-size: 1.5rem;
+    text-align: left !important;
   }
 
   .logo {
@@ -145,11 +146,11 @@ p {
     height: auto;
   }
 
-  .lightbulb,
+  /* .lightbulb,
   .smiley {
-    display: none;
+    display: none; */
   }
-}
+
 
 @media screen and (max-width: 768px) {
   .logo {
@@ -157,8 +158,11 @@ p {
     height: auto;
   }
 
-  .lightbulb,
+  /* .lightbulb,
   .smiley {
-    display: none;
+    display: none; */
+    p {
+      text-align: left !important;
+    }
   }
-}
+

@@ -11,7 +11,7 @@
   top: 0;
   left: 0;
   z-index: 1000;
-  padding: 1rem 5%;
+  padding: .9rem 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,7 +45,7 @@
 /* Navigation links */
 .nav-container a {
   font-family: 'Nunito Sans', sans-serif;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 500;
   text-decoration: none;
   color: #000000c7;
@@ -66,7 +66,7 @@
   font-family: 'Nunito Sans', sans-serif;
   font-size: 30px;
   font-weight: 500;
-  padding: 10px 20px;
+  padding: 3px 12px;
   color: #ffffff;
   text-decoration: none;
   background-color: #5c1c75;
