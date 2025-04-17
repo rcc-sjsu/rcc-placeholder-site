@@ -89,9 +89,7 @@ headerTemplate.innerHTML =
         <a href="portfolio.html">portfolio</a>
     </div>
 
-    <div class="signup-button">
-            <a href="signup.html"> sign up </a>
-    </div>
+    <a href="signup.html" class="mobile-signup">sign up</a>
 </div>
 `;
 

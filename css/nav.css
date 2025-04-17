@@ -146,3 +146,19 @@
   }
   
 }
+/* Utility: hide specific elements on mobile only */
+@media (max-width: 768px), (orientation: portrait) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
+
+.hide-on-desktop {
+  display: none;
+}
+
+@media (max-width: 768px), (orientation: portrait) {
+  .hide-on-desktop {
+    display: block !important;
+  }
+}
