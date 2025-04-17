@@ -215,9 +215,6 @@
     transition: 0.3s ease;
   }
 
-  .circle {
-  }
-
   .logo {
     width: 25rem;
     height: 25rem;
@@ -248,6 +245,33 @@
 }
 
 @media screen and (max-width: 768px) {
+  .logo {
+    max-width: 18rem;
+    height: auto;
+  }
+
+  .img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .lightbulb,
+  .smiley {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .topnav a,
+  .nav-container a,
+  .signup-button a {
+    font-size: 26px !important;
+  }
+
+  h1 {
+    font-size: 3.5rem !important;
+  }
+
   .logo {
     max-width: 18rem;
     height: auto;
