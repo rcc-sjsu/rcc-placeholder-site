@@ -1,100 +1,116 @@
 /* @media screen and (orientation: landscape) { */
-@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 
 /* Full page container */
-#all
-{
-    background: radial-gradient(ellipse 50% 30% at center, rgba(192, 108, 255, 0.6), rgba(255, 255, 255, 0));
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    height: 100vh;
-    padding-top: 150px;
+#all {
+  background: radial-gradient(
+    ellipse 50% 30% at center,
+    rgba(192, 108, 255, 0.6),
+    rgba(255, 255, 255, 0)
+  );
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  padding-top: 150px;
 }
 
 /* Text container */
 #text {
-    max-width: 48.667rem;
-    margin-left: 3rem;
-    margin-right: 2rem;
-    text-align: center;
+  max-width: 48.667rem;
+  margin-left: 3rem;
+  margin-right: 2rem;
+  text-align: center;
 }
 
 /* Headings */
 h1 {
-    font-family: Zilla Slab;
-    font-size: 4rem;
-    font-weight: bold;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: #5C1C75;
+  font-family: Zilla Slab;
+  font-size: 4rem;
+  font-weight: bold;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #5c1c75;
 }
 
 /* Paragraphs */
 p {
-    font-family: Nunito Sans;
-    font-size: 1.8rem;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: #000000C7;
+  font-family: Nunito Sans;
+  font-size: 1.8rem;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #000000c7;
+  text-align: left;
 }
 
 /* Image styling */
 .img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Individual image positions */
 #idcard {
-    width: 140px;
-    position: relative;
-    margin-right: -8rem;
-    margin-top: 21rem;
+  width: 140px;
+  position: relative;
+  margin-right: -8rem;
+  margin-top: 21rem;
 }
 
 #group-photo {
-    max-width: 33rem;
-    margin-right: 3rem;
+  max-width: 33rem;
+  margin-right: 3rem;
 }
 
 #shapes {
-    width: 140px;
-    position: relative;
-    margin-top: -22rem;
-    margin-left: -11rem;
-    margin-right: 3rem;
+  width: 140px;
+  position: relative;
+  margin-top: -22rem;
+  margin-left: -11rem;
+  margin-right: 3rem;
 }
 
 /* List items */
 li {
-    font-family: Nunito Sans;
-    font-size: 22px;
-    width: 70%;
-    font-weight: 500;
-    line-height: 49.1px;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: #000000C7;
-    margin: 0;
+  font-family: Nunito Sans;
+  font-size: 22px;
+  width: 70%;
+  font-weight: 500;
+  line-height: 49.1px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #000000c7;
+  margin: 0;
 }
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {
-    * {
-        position: relative;
-        margin: auto;
-    }
-    #all {
-        display: flex;
-        flex-direction: column;
-        height: 150vh;
-    }
-    #text {
-        margin-top: 15%;
-    }
-    #group-photo {
-        margin: 0;
-    }
+  * {
+    position: relative;
+    margin: auto;
+  }
+  h1 {
+    font-size: 2.5rem !important;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  #all {
+    display: flex;
+    flex-direction: column;
+    height: 150vh;
+  }
+  #text {
+    margin-top: 15%;
+  }
+  #group-photo {
+    max-width: 18rem;
+    height: auto;
+  }
+
+  .img {
+    max-width: 100%;
+    height: auto;
+  }
 }

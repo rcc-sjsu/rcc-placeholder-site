@@ -16,7 +16,6 @@
   max-width: 48.667rem;
   margin-left: 3rem;
   margin-right: 2rem;
-  text-align: center;
 }
 
 /* Headings */
@@ -54,6 +53,11 @@ p {
     position: relative;
     margin: auto;
   }
+  h1 {
+    font-size: 3rem !important;
+    line-height: 1.2;
+    text-align: center;
+  }
 
   #all {
     flex-direction: column;
@@ -68,6 +72,15 @@ p {
   }
 
   #group-photo {
-    margin: 0;
+    max-width: 18rem !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    display: block;
+  }
+
+  .img {
+    max-width: 100%;
+    height: auto;
   }
 }
