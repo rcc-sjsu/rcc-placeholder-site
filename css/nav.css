@@ -15,8 +15,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.6); /* semi-transparent */
+  backdrop-filter: blur(10px);                /* blur effect */
+  -webkit-backdrop-filter: blur(10px);        /* Safari support */
 }
+
 
 /* Logo styling */
 .rcc img {

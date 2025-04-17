@@ -107,3 +107,38 @@ li {
     margin-bottom: 1rem;
   }
 } 
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  * {
+    position: relative;
+    margin: auto;
+  }
+  h1 {
+    font-size: 2.5rem !important;
+    line-height: 1.2;
+    text-align: center !important;
+  }
+    p {
+    font-size: 1.25rem !important;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  #all {
+    display: flex;
+    flex-direction: column;
+    height: 150vh;
+  }
+  #text {
+    margin-top: 15%;
+  }
+  #group-photo {
+    max-width: 18rem;
+    height: auto;
+  }
+
+  .img {
+    max-width: 100%;
+    height: auto;
+  }
+}

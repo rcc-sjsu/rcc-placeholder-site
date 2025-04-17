@@ -1,90 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
-/* Full page container */
+/* Responsive Full Page Container */
 #all {
   background: radial-gradient(ellipse 50% 30% at center, rgba(192, 108, 255, 0.6), rgba(255, 255, 255, 0));
-  justify-content: center;
-  align-items: center;
   display: flex;
-  height: 100vh;
-  padding-top: 100px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 6rem 1rem 3rem;
+  box-sizing: border-box;
 }
 
-/* Text container */
+/* Text Container */
 #text {
-  max-width: 48.667rem;
-  margin-left: 3rem;
-  margin-right: 2rem;
+  max-width: 900px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
 }
 
 /* Headings */
 h1 {
   font-family: 'Zilla Slab', serif;
-  font-size: 4rem;
+  font-size: clamp(2rem, 5vw, 4rem);
   font-weight: bold;
   color: #5C1C75;
-  text-decoration-skip-ink: none;
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 /* Paragraphs */
 p {
   font-family: 'Nunito Sans', sans-serif;
-  font-size: 1.8rem;
+  font-size: clamp(1rem, 2.5vw, 1.8rem);
   color: #000000C7;
-  text-decoration-skip-ink: none;
+  text-align: left;
+  margin-bottom: 1.5rem;
 }
 
-/* Image styling */
+/* Image Styling */
 .img, #group-photo {
   max-width: 100%;
   height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
-/* Specific image styles */
 #group-photo {
   max-width: 33rem;
-  margin-right: 3rem;
 }
 
-/* Responsive layout for smaller screens */
+/* Responsive Adjustments for Smaller Screens */
 @media screen and (max-width: 768px) {
-  * {
-    position: relative;
-    margin: auto;
-  }
-  h1 {
-    font-size: 2.5rem !important;
-    line-height: 1.2;
-    text-align: center;
-  }
-  p {
-    font-size: 1.25rem !important;
-    text-align: center;
-  }
-
-  #all {
-    flex-direction: column;
-    height: auto;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-
   #text {
-    margin-top: 15%;
     padding: 0 1rem;
+    text-align: center;
+    margin-top: 10%;
+  }
+
+  h1 {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    text-align: center;
   }
 
   #group-photo {
     max-width: 18rem !important;
     width: 100% !important;
-    height: auto !important;
-    margin: 0 auto !important;
-    display: block;
+  }
+}
+
+/* Slight downscale for laptop screens */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  h1 {
+    font-size: 3.5rem;
   }
 
-  .img {
-    max-width: 100%;
-    height: auto;
+  p {
+    font-size: 1.5rem;
   }
 }
