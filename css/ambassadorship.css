@@ -95,6 +95,11 @@ li {
     line-height: 1.2;
     text-align: center;
   }
+    p {
+    font-size: 1.25rem !important;
+    line-height: 1.2;
+    text-align: center;
+  }
 
   #all {
     display: flex;
